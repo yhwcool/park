@@ -88,7 +88,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <section class="sidebar">
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">菜单列表</li>
-        <li><a href="pages/main.html" target="main"><i class="fa fa-circle-o text-red"></i> <span>首页</span></a></li>
+        <li><a href="pages/parkList.html" target="main"><i class="fa fa-circle-o text-red"></i> <span>首页</span></a></li>
         <li><a href="pages/parkList.html" target="main"><i class="fa fa-circle-o text-yellow"></i> <span>停车场列表</span></a></li>
         <li><a href="pages/carList.html" target="main"><i class="fa fa-circle-o text-aqua"></i> <span>车辆列表</span></a></li>
         <li><a href="pages/userList.html" target="main"><i class="fa fa-circle-o text-green"></i> <span>用户列表</span></a></li>
@@ -109,7 +109,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
     <!-- Main content -->
     <section class="content">
-    			<iframe align="middle" style="min-height: 800px;" frameborder="0" scrolling="no" id="external-frame" width="100%" height="100%" src="pages/multiMeetingManager/meetingList.html" name="main"></iframe>
+    	<iframe align="middle" style="min-height: 800px;" frameborder="0" scrolling="no" id="external-frame" width="100%" height="100%" src="pages/parkList.html" name="main"></iframe>
     </section>
     <!-- /.content -->
   </div>
