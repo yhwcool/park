@@ -15,6 +15,7 @@
     
     <welcome-file-list>
         <welcome-file>jsp/pages/welcome.jsp</welcome-file>
+        <welcome-file>jsp/pages/park.jsp</welcome-file>
     </welcome-file-list>
 
 </web-app>
