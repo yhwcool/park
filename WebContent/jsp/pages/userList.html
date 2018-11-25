@@ -24,7 +24,7 @@
 				<thead>
 					<tr>
 						<th>序号</th>
-						<th>用户名</th>
+						<th>帐号</th>
 						<th>停车产编号</th>
 						<th>操作</th>
 					</tr>
@@ -282,14 +282,18 @@
 		          <div class="modal-body">
 		      			<form>
 		      			 	<div class="form-group"> 
-		      			 		<label for="exampleInputEmail1">Email address</label>
-		      			 		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"> 
+		      			 		<label for="username">帐号</label>
+		      			 		<input type="text" name="uesrname" class="form-control" id="exampleInputEmail1" placeholder="帐号"> 
 		      			 	</div> 
 		      			 	<div class="form-group"> 
-		      			 		<label for="exampleInputPassword1">Password</label> 
-		      			 		<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"> 
+		      			 		<label for="password">密码</label> 
+		      			 		<input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="密码" readonly="readonly"> 
 		      			 	</div> 
-		      			 </form>
+		      			 	<div class="form-group">
+								<label for="number">停车场编号</label> 
+		      			 		<input type="text" name="number" class="form-control" id="exampleInputPassword1" placeholder="停车场编号">	
+		      			 	</div>
+		      			</form>
 		          </div>
 		          <div class="modal-footer">
 		         
