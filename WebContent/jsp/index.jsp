@@ -91,7 +91,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <li><a href="pages/parkList.html" target="main"><i class="fa fa-circle-o text-red"></i> <span>首页</span></a></li>
         <li><a href="pages/parkList.html" target="main"><i class="fa fa-circle-o text-yellow"></i> <span>停车场列表</span></a></li>
         <li><a href="pages/carList.html" target="main"><i class="fa fa-circle-o text-aqua"></i> <span>车辆列表</span></a></li>
-        <li><a href="pages/userList.html" target="main"><i class="fa fa-circle-o text-green"></i> <span>用户列表</span></a></li>
+        <li><a href="<%=basePath%>managerlist.do" target="main"><i class="fa fa-circle-o text-green"></i> <span>用户列表</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->

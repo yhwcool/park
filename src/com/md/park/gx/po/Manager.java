@@ -3,45 +3,39 @@ package com.md.park.gx.po;
 public class Manager {
 	
 	private int id;
-	private int managerTel;
-	private String managerManageParkNum;
-	private String managerUserName;
-	private String managerPassword;
-	
+	private long phone;
+	private String parkSerial;
+	private String name;
+	private String password;
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
-	public int getManagerTel() {
-		return managerTel;
+	public long getPhone() {
+		return phone;
 	}
-	public void setManagerTel(int managerTel) {
-		this.managerTel = managerTel;
+	public void setPhone(long phone) {
+		this.phone = phone;
 	}
-	public String getManagerManageParkNum() {
-		return managerManageParkNum;
+	public String getParkSerial() {
+		return parkSerial;
 	}
-	public void setManagerManageParkNum(String managerManageParkNum) {
-		this.managerManageParkNum = managerManageParkNum;
+	public void setParkSerial(String parkSerial) {
+		this.parkSerial = parkSerial;
 	}
-	public String getManagerUserName() {
-		return managerUserName;
+	public String getName() {
+		return name;
 	}
-	public void setManagerUserName(String managerUserName) {
-		this.managerUserName = managerUserName;
+	public void setName(String name) {
+		this.name = name;
 	}
-	public String getManagerPassword() {
-		return managerPassword;
+	public String getPassword() {
+		return password;
 	}
-	public void setManagerPassword(String managerPassword) {
-		this.managerPassword = managerPassword;
+	public void setPassword(String password) {
+		this.password = password;
 	}
-	
-	
-	
-	
-	
 	
 }

@@ -1,17 +1,21 @@
 package com.md.park.gx.servlet;
 
 import java.io.IOException;
-import java.util.List;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.md.park.gx.dao.ManagerDao;
+
+
+import net.sf.json.JSONObject;
+
 import com.md.park.gx.po.Manager;
 import com.md.park.gx.service.ManagerService;
 import com.md.park.gx.service.impl.ManagerServiceImpl;
+import com.md.park.gx.util.Message;
 
 /**
  * @author 71076
@@ -33,18 +37,25 @@ public class SaveManagerServlet extends HttpServlet{
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		
+		manager = new Manager();
 		resp.setContentType("text/html;charset=utf-8");
-		String managerUserName = req.getParameter("managerUserName");
-		int managerTel = (int) req.getAttribute("managerTel");
-		String managerManageParkNum = req.getParameter("managerManageParkNum");
-		String managerPassword = req.getParameter("managerPassword");
-		manager.setManagerManageParkNum(managerManageParkNum);
-		manager.setManagerPassword(managerPassword);
-		manager.setManagerTel(managerTel);
-		manager.setManagerUserName(managerUserName);
+		String name = req.getParameter("name");
+		String phone =  req.getParameter("phone");
+		String parkSerial = req.getParameter("parkSerial");
+		String password = req.getParameter("password");
+		manager.setParkSerial(parkSerial);
+		manager.setPassword(password);
+		manager.setPhone(Long.parseLong(phone));
+		manager.setName(name);
 		managerService = new ManagerServiceImpl();
-		managerService.saveManager(manager);
+		Message msg = managerService.saveManager(manager);
+		JSONObject json = new JSONObject();
+		
+		json.put("code", msg.getCode());
+		json.put("msg", msg.getMsg());
+		PrintWriter out = resp.getWriter();
+		System.out.print(json.toString());
+		out.write(json.toString());
 		
 	}
 

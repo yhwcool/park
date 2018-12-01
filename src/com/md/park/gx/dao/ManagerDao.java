@@ -14,7 +14,8 @@ public interface ManagerDao {
 	 * @param manager 
 	 * 保存管理員
 	 */
-	public void saveManager(Manager manager);
+	public boolean saveManager(Manager manager);
+	public Manager getManager(String name);
 	/*
 	 * @method getManagers
 	 * @param id

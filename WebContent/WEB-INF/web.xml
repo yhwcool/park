@@ -3,14 +3,25 @@
          xmlns="http://java.sun.com/xml/ns/javaee"
           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
          id="WebApp_ID" version="3.0">
-
-    <servlet>
-        <servlet-name>adduser</servlet-name>
-        <servlet-class>com.md.park.gx.servlet.AddUserServlet</servlet-class>
+	
+	
+	<servlet>
+        <servlet-name>managerList</servlet-name>
+        <servlet-class>com.md.park.gx.servlet.ManagerListServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-    	<servlet-name>adduser</servlet-name>
-    	<url-pattern>/addUser.do</url-pattern>
+    	<servlet-name>managerList</servlet-name>
+    	<url-pattern>/managerlist.do</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>addmanager</servlet-name>
+        <servlet-class>com.md.park.gx.servlet.SaveManagerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>addmanager</servlet-name>
+    	<url-pattern>/addmanager.do</url-pattern>
     </servlet-mapping>
     
     <welcome-file-list>
