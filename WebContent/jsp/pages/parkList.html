@@ -261,6 +261,7 @@
 <!-- page script -->
 <script>
   $(function () {
+	  
     $('#cdshi').DataTable({
       'paging'      : true,
       'lengthChange': false,
@@ -268,8 +269,9 @@
       'ordering'    : true,
       'info'        : true,
       'autoWidth'   : false,
-	  "processing": true,//刷新的那个对话框
+	  "processing"	: true, //刷新的那个对话框
        "language": {
+    	   
 			       "sProcessing": "处理中...",
 			       "sLengthMenu": "显示 _MENU_ 项结果",
 			       "sZeroRecords": "没有匹配结果",

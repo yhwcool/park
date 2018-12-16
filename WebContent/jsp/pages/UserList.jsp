@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%  
 String path = request.getContextPath();  
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";  
@@ -49,242 +50,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td>1</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					
-					<tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					
-					<tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr><tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>admin</td>
-						<td>220012</td>
-						<td>
-							<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
-							<button class="btn btn-danger">删除</button>
-						</td>
-					</tr>
-					
+				  
+					<c:forEach items="${requestScope.lists}" var="item">
+						<tr>
+							<td>${item.id}</td>
+							<td>${item.name}</td>
+							<td>220012</td>
+							<td>
+								<button class="btn btn-info" data-toggle="modal" data-target="#user-add-modal">编辑</button>
+								<button class="btn btn-danger">删除</button>
+							</td>
+						</tr>
+						
+				     </c:forEach>
 				</tbody>
 			
 			</table>
@@ -370,7 +148,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <script>
   $(function () {
     $('#cdshi').DataTable({
-      'paging'      : true,
+      //'paging'      : true,
       'lengthChange': false,
       'searching'   : false,
       'ordering'    : true,

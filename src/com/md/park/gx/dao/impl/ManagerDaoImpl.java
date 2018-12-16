@@ -45,8 +45,28 @@ public class ManagerDaoImpl implements ManagerDao{
 
 	@Override
 	public List<Manager> getManagers() {
-		 
-		
+		Connection connection = null;
+		PreparedStatement preStatement = null;
+		ResultSet resultSet;
+		List<Manager> managers;
+		String sql = "select * from manager";
+		try {
+			connection = jdbcUtil.getConnection();
+			preStatement = connection.prepareStatement(sql);
+			resultSet = preStatement.executeQuery();
+			managers = new ArrayList<Manager>();
+			while(resultSet.next()){
+				Manager manager = new Manager();
+				manager.setId(resultSet.getInt(1));
+				manager.setPhone(resultSet.getLong(2));
+				manager.setName(resultSet.getString(3));
+				manager.setPassword(resultSet.getString(4));
+				managers.add(manager);
+			}
+			return managers; 
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 		
 		return null;
 	}

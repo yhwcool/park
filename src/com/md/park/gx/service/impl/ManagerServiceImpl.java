@@ -1,6 +1,10 @@
 package com.md.park.gx.service.impl;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 import com.md.park.gx.dao.ManagerDao;
 import com.md.park.gx.dao.impl.ManagerDaoImpl;
 import com.md.park.gx.po.Manager;
@@ -38,7 +42,9 @@ public class ManagerServiceImpl implements ManagerService{
 	@Override
 	public List<Manager> getManagers() {
 		// TODO Auto-generated method stub
-		return null;
+		List <Manager> lists = new ArrayList<Manager>();
+		lists = mangerdao.getManagers();
+		return lists;
 	}
 
 	@Override
